@@ -1,0 +1,31 @@
+{
+  "name": "conservatorio-juan-carlos-paz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramironinni/conservatorio-juan-carlos-paz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramironinni/conservatorio-juan-carlos-paz/issues"
+  },
+  "homepage": "https://github.com/ramironinni/conservatorio-juan-carlos-paz#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^5.0.0-beta1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

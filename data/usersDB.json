@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "lastName": "",
+        "firstName": "",
+        "idOrPassport": "",
+        "birthDate": "",
+        "birthPlace": "",
+        "addressStreet": "",
+        "addressNumber": "",
+        "addressFloor": "",
+        "addressTower": "",
+        "addressDoor": "",
+        "addressReference": "",
+        "state": "",
+        "district": "",
+        "city": "",
+        "zipCode": "",
+        "telephone1": "",
+        "telephone2": "",
+        "email": "ramironinni@gmail.com",
+        "password": "$2b$10$PrNYhTqfQ8ZGMEHmHc/9Y./RBzDOwKhYnfIU6drdH8aSmiCO505F."
+    }
+]
