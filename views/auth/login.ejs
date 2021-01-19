@@ -41,6 +41,7 @@
             <div class="invalid-feedback">
                <%= typeof errorsPasswordMessage !="undefined" ? errorsPasswordMessage : "" %>
             </div>
+            <div class="text-danger"><%= (typeof message != "undefined" ? message : "") %> </div>
             <div class="checkbox mb-3">
                 <label>
                     <input type="checkbox" value="remember-me"> Recordarme

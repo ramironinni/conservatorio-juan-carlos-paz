@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "lastName": "",
-        "firstName": "",
+        "lastName": "Ninni",
+        "firstName": "Ramiro",
         "idOrPassport": "",
         "birthDate": "",
         "birthPlace": "",
@@ -19,6 +19,8 @@
         "telephone1": "",
         "telephone2": "",
         "email": "ramironinni@gmail.com",
-        "password": "$2b$10$PrNYhTqfQ8ZGMEHmHc/9Y./RBzDOwKhYnfIU6drdH8aSmiCO505F."
+        "password": "$2b$10$PrNYhTqfQ8ZGMEHmHc/9Y./RBzDOwKhYnfIU6drdH8aSmiCO505F.",
+        "level": 1,
+        "admin": true
     }
 ]

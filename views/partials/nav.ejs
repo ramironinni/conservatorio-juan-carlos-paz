@@ -106,6 +106,15 @@
                 </ul>
             </li>
         </ul>
+        <% if (user) { %>
+            <span class="navbar-text">
+                <ul class="navbar-nav">
+                    <a class="nav-link" href="#">
+                        <li class="nav-item"><span><%= user.firstName + " " + user.lastName %>&nbsp;</span><i class="bi bi-person-circle"></i></li>
+                    </a>
+                </ul>
+            </span>
+        <% } else { %>
         <span class="navbar-text">
             <ul class="navbar-nav">
                 <a class="nav-link" href="/auth/login">
@@ -113,11 +122,7 @@
                 </a>
             </ul>
         </span>
-        <!-- <span class="navbar-text">
-                        <ul class="navbar-nav">
-                            <a class="nav-link" href="#"><li class="nav-item">Nombre Apellido <i class="bi bi-person-circle"></i></li></a>
-                        </ul>
-         </span> -->
+        <%} %>
     </div>
 </div>
 </nav>

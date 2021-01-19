@@ -11,9 +11,21 @@ const bcrypt = require("bcrypt");
 
 const authController = {
     showLogin: (req,res) => {
-        res.render("auth/login");
+        if (res.locals.user) {
+        res.redirect("/");
+        } else {
+            res.render("auth/login");
+        }
+
+    },
+    showLoginMotive: (req, res) => {
+        if (req.params.motive == "invalidLogin") {
+            const message = "El email y/o la contraseña no son correctos";
+            res.render("auth/login", {message})
+        }
     },
     login: (req,res) => {
+        
         let errors = validationResult(req);
 
         if (!errors.isEmpty()) {
@@ -29,8 +41,6 @@ const authController = {
             }
 
             const validEmail = req.body.email;
-
-            console.log(errorsEmailMessage);
 
             const errorsPassword = errors.errors.filter(
                 (error) => error.param == "password"
@@ -59,7 +69,7 @@ const authController = {
         });
 
         if (!user) {
-            return res.redirect("/auth/login?invalidlogin=true");
+            return res.redirect("/auth/login/invalidLogin");
         }
 
         req.session.loggedUserId = user.id;
@@ -80,11 +90,10 @@ const authController = {
             id: newUserId,
             ...req.body,
             password: bcrypt.hashSync(req.body.password, 10),
-            // avatar: req.file.filename,
+            // photo: req.file.filename,
         };
 
         saveInDB(users, newUser, "usersDB");
-
 
         res.redirect("/auth/login")
     },
